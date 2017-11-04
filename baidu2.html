@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度音乐</title>
+    <link rel="stylesheet" href="CSS/music.css"/>
+    <script>
+        function mp3_play(m1_paly){
+            document.getElementById("m1").src = m1_paly;
+            m1_paly.play()
+        }
+    </script>
+</head>
+<body>
+<body>
+<!--顶部 开始-->
+<div class="top">
+    <!--上道 开始-->
+    <div class="top_top">
+        <!--上左 开始-->
+        <div class="top_left">
+            <img src="image/music.PNG"/>
+        </div>
+        <!--上左 结束-->
+
+        <!--上右 开始-->
+        <div class="top_right">
+            <!--上右上-->
+            <div class="top_right_top">
+                <p>
+                    <a style="margin: 0 auto" href="javascript:void (0)">新闻</a>
+                    <a href="javascript:void (0)">网页</a>
+                    <a href="javascript:void (0)">贴吧</a>
+                    <a href="baidu1.html">知道</a>
+                    <a href="javascript:void (0)"><b>音乐</b></a>
+                    <a href="shi%5Bin.html ">视频</a>
+                    <a href="javascript:void (0)">图片</a>
+                    <a href="javascript:void (0)">地图</a>
+                    <a href="javascript:void (0)">百科</a>
+                    <a href="javascript:void (0)">文库</a>
+                </p>
+            </div>
+            <!--上右中-->
+            <div class="top_right_middle">
+                <div style="margin-top: 15px">
+                    <input class="input_text" type="text" />
+                    <input class="input_button" type="button" value="百度一下"/>
+                </div>
+            </div>
+            <!--上右下-->
+            <div class="top_right_bottom">
+                <div class="search_lishi">
+                    <p>
+                        <a href="javascript:void (0)">微微一笑很倾城</a>
+                        <a href="javascript:void (0)">《独家记忆》陈小春</a>
+                        <a href="javascript:void (0)">TFBOYS</a>
+                        <a href="javascript:void (0)">李宗盛</a>
+                        <a href="javascript:void (0)">小苹果</a>
+                        <a href="javascript:void (0)">《相依为命》陈小春</a>
+                        <a href="javascript:void (0)">陈奕迅</a>
+                        <a href="javascript:void (0)">薛之谦</a>
+                    </p>
+                </div>
+                <div class="gezhong_photo">
+                    <p>
+                        <a href="javascript:void (0)"><img src="image/1.png"/></a>
+                        <a href="javascript:void (0)"><img src="image/1.png"/></a>
+                        <a href="javascript:void (0)"><img src="image/1.png"/></a>
+                        <a href="javascript:void (0)"><img src="image/1.png"/></a>
+                        <a href="javascript:void (0)"><img src="image/1.png"/></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--上右 结束-->
+    </div>
+    <!--上道 结束-->
+    <!--上道 开始-->
+    <div class="top_bottom">
+        <div class="bottom_left">
+            <ul>
+                <li style="border: 0px"><a href="#"></a></li>
+                <li style="border: 0px"><a href="#"></a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">分类</a></li>
+                <li><a href="#">榜单</a></li>
+                <li><a href="#">MV</a></li>
+                <li><a href="#">歌单</a></li>
+                <li><a href="#">演出</a></li>
+
+            </ul>
+        </div>
+        <div class="bottom_right">
+            <div class="bottom_right_top">
+                <span><img src="image/icon-fm.png"/></span>
+                <input type="button" value="随心听"/>
+            </div>
+            <div class="bottom_right_bottom">
+                <span><img src="image/icon-mbox.png"/></span>
+                <input type="button" value="我的音乐盒"/>
+            </div>
+        </div>
+    </div>
+    <!--上道 结束-->
+</div>
+<!--顶部 结束-->
+
+<!--中间部分  开始-->
+<div class="middle">
+    <!--顶部-->
+    <div class="middle_top">
+        <p><a href="#">音乐分类</a>&nbsp;&gt;&nbsp;流行</p>
+    </div>
+    <!--中左-->
+    <div class="middle_left">
+
+        <!--播放器-->
+
+        <div>
+            <audio id="m1" src="mp3/独家记忆-陈小春.mp3" controls autoplay style="width: 500px;height: 50px"></audio>
+        </div>
+
+        <div class="middle_left_top">
+            <ul>
+                <li style="font-size: 26px;margin: 0 auto">流行</li>
+                <li style="font-size: 11px;color: darkgray">共1000首歌</li>
+                <li><input type="button" value="收听该分类电台"/></li>
+                <li><input type="button" value="收听音乐人流行电台"/></li>
+            </ul>
+        </div>
+        <hr style="background-color: darkgray;"/>
+        <!--左中-->
+        <div class="middle_left_middle">
+            <!--功能按钮-->
+            <div class="function_button">
+                <ul>
+                    <li style="padding-top: 3px"><input type="checkbox" name="all" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 5px">全部</li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                </ul>
+            </div>
+            <!--音乐-->
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">01</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/独家记忆-陈小春.mp3')">独家记忆</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">邓紫棋</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">独家记忆</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">02</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/夜空中最亮的星-逃跑计划.mp3')">夜空中最亮的星-逃跑计划.</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">逃跑计划</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">世界</a></li>s
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">03</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/相依为命(岁月友情演唱会现场版)-陈小春.mp3')">相依为命(岁月友情演唱会现场版).</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">陈小春</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">相依为命（现场版）</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">04</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/七月上-Jam阿敬.mp3')">七月上-Jam阿敬.</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">Jam阿敏</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">酷我热门单曲合辑</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">05</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/走着走着就散了-庄心妍.mp3')">走着走着就散了-庄心妍.</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">庄心妍</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">走着走着就散了</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">06</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/薛之谦 - 演员.mp3')">薛之谦 - 演员.</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">薛之谦</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">绅士</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">07</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/小幸运-谭嘉仪.mp3')">小幸运-谭嘉仪.</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">谭嘉仪</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">酷我热门单曲合辑</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">08</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li class="title_overflow"><a href="#" onclick="mp3_play('mp3/走着走着就散了-庄心妍.mp3')">走着走着就散了-庄心妍..</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">庄心妍</a></li>
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">庄心妍情歌精选集</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <div class="middle_music">
+                <ul>
+                    <li style="padding-top:2px"><input type="checkbox" name="m1" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 3px;">09</li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <<li class="title_overflow"><a href="#" onclick="mp3_play('mp3/陈奕迅 - 好久不见 (国语) (《失恋33天》电影插曲_《不如不见》国语版).mp3')">陈奕迅 - 好久不见 (国语) (《失恋33天》电影插曲_《不如不见》国语版).</a></li>
+                    <li style="width: 50px;height: 10px"></li>
+                    <li class="name_overflow"><a href="#">陈奕迅</a></li>)
+                    <li style="width: 30px;height: 10px"></li>
+                    <li class="zj_overflow"><a href="#">好久不见</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li style="width: 26px;height:20px;background-color: #FF730C "><a style="font-size: 10px;color: white" href="#">无损</a></li>
+                    <li style="width: 20px;height: 10px"></li>
+                    <li><a href="#"><img src="image/bf.png"/></a></li>
+                    <li><a href="#"><img src="image/tj.png"/></a></li>
+                    <li><a href="#"><img src="image/xz.png"/></a></li>
+                    <li><a href="#"><img src="image/sj.png"/></a></li>
+                    <li><a href="#"><img src="image/sc.png"/></a></li>
+                </ul>
+            </div>
+            <!--功能按钮-->
+            <div class="function_button">
+                <ul>
+                    <li style="padding-top: 3px"><input type="checkbox" name="all" /></li>
+                    <li style="font-size: 13px;color: darkgray;padding-top: 5px">全部</li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                    <li><input class="middle_left_input" type="button" value="播放选中歌曲"/></li>
+                </ul>
+            </div>
+            <div class="number">
+                <ul>
+                    <li style="width: 50px"><a href="#">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">40</a></li>
+                    <li style="width: 50px"><a href="#">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--左下-->
+        <div class="left_bottom">
+            <img src="image/3.png"/>
+        </div>
+    </div>
+    <!--中右-->
+    <div class="middle_right">
+        <img src="image/2.png"/>
+    </div>
+</div>
+<!--中间部分  结束-->
+<!--底部 开始-->
+<hr style="float: left;width: 100%;background-color: darkgray;margin-top: 30px"/>
+
+<div class="bottom">
+    <ul>
+        <li><a href="#">意见反馈</a> | </li>
+        <li><a href="#">联系我们 | </a></li>
+        <li><a href="#">帮助中心 | </a></li>
+        <li><a href="#">资源合作开放平台 | </a></li>
+        <li><a href="#">原创音乐人 | </a></li>
+        <li>
+            <span style="color: darkgray">&copy;2016 Baidu </span>
+            <a href="#" style="text-decoration: underline">使用前必读</a>
+            <span>文网文[2010]197号</span>
+        </li>
+    </ul>
+</div>
+
+<!--底部 结束-->
+
+
+
+</body>
+</html>

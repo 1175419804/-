@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放</title>
+    <link rel="stylesheet" href="CSS/video.css"/>
+    <script>
+        function mp4_play(p4_paly){
+            document.getElementById("mp4").src = p4_paly;
+            p4_paly.play()
+        }
+    </script>
+</head>
+<body>
+<div class="top">
+
+</div>
+<div class="box">
+    <div class="left">
+        <video id="mp4" src="mp4/6559792_MP4.mp4" autoplay controls style="width: 620px;height: 420px"></video>
+    </div>
+    <div class="right">
+        <ul>
+            <li style="margin-top: 10px"><img src="image/S60923-190047.jpg" width="100" height="80"/></li>
+            <li>
+                <p><a href="#" onclick="mp4_play('mp4/6700790_MP4.mp4')">相依为命—陈小春</a></p>
+                <p>岁月友情演唱会（现场版)</p>
+            </li>
+            <li style="width: 100%;height: 10px;margin-top: 8px"><hr/></li>
+            <li style="margin-top: 10px"><img src="image/S60923-184219.jpg" width="100" height="80"/></li>
+            <li>
+                <p><a href="#" onclick="mp4_play('mp4/9811580_MP4.mp4')">papi酱</a></p>
+                <p>真正的学霸到底是什么样子的</p>
+            </li>
+            <li style="width: 100%;height: 10px;margin-top: 8px"><hr/></li>
+            <li style="margin-top: 10px"><img src="image/S60923-184242.jpg" width="100" height="80"/></li>
+            <li>
+                <p><a href="#" onclick="mp4_play('mp4/7676967_MP4.mp4')">《一笑倾城》</a></p>
+                <p>（电视剧《微微一笑很倾城》）</p>
+            </li>
+            <li style="width: 100%;height: 10px;margin-top: 8px"><hr/></li>
+            <li style="margin-top: 10px"><img src="image/S60923-184301.jpg" width="100" height="80"/></li>
+            <li>
+                <p><a href="#" onclick="mp4_play('mp4/7206548_MP4.mp4')">《最初的梦想》</a></p>
+                <p>（电影《微微一笑很倾城》）</p>
+            </li>
+            <li style="width: 100%;height: 10px;margin-top: 8px"><hr/></li>
+
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <style>
+        #test{
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+        }
+        .top{
+            width:100%;
+            height: 40px;
+        }
+
+
+        .top li{
+            list-style: none;
+            width: 55px;
+            float: right;
+        }
+
+        .top a{
+            color: black;
+            text-decoration: none;
+        }
+        .middle{
+            width: 100%;
+            height: 600px;
+        }
+        .baidu_logo{
+            width: 300px;
+            height: 150px;
+
+            margin: 0 auto;
+            margin-top:130px ;
+        }
+
+        .search{
+            width: 640px;
+            height:40px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .text_input{
+            width: 500px;
+            height: 30px;
+            float: left;
+        }
+        .button_input{
+            border: 0px;
+            background-color: #3388ff;
+            color: white;
+            width: 136px;
+            height:36px;
+            float: left;
+        }
+        .font_jiacu{
+            font-weight: bold;
+        }
+        .more{
+            width: 90px!important;
+            height:30px!important;
+            text-align: center;
+            line-height: 30px ;
+            background-color: #3388ff;
+            margin-top: -5px;
+        }
+        .photo{
+            width: 20px;
+            height: 20px;
+            background: url("image/bg.png")no-repeat;
+            position: relative;
+            z-index: 2;
+            left: 480px;
+            top:10px;
+        }
+        .photo_yc{
+            width: 640px;
+            height: 450px;
+            background: url("image/fileupload.png")no-repeat;
+            position: relative;
+            z-index: 2;
+            margin-top: -20px;
+            display: none;
+        }
+        .more_product{
+            width: 100px;
+            height: 900px;
+            background-color: #fcfffa;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            display: none;
+        }
+        .more_product ul{
+            padding: 0;
+        }
+        .more_product li{
+            width: 36px;
+            list-style: none;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        .music{
+            width:36px;
+            height: 36px;
+            background: url("image/baidu.png")no-repeat;
+            background-position: -72px 0;
+
+        }
+        .picture{
+            width:36px;
+            height: 36px;
+            background: url("image/baidu.png")no-repeat;
+            background-position: -108px 0;
+
+        }
+        .know{
+            width:36px;
+            height: 36px;
+            background: url("image/baidu.png")no-repeat;
+            background-position: -36px 0;
+
+        }
+        .bang{
+            width:36px;
+            height: 36px;
+            background: url("image/baidu.png")no-repeat;
+            background-position: -180px 0;
+
+        }
+        .bottom{
+            width: 640px;
+            height:100px;
+            margin: 0 auto;
+        }
+        .bottom_left{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        .bottom_right{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        .bottom_left_left{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        .bottom_left_right{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        .left_text{
+            width:35%;
+            font-size: 10px;
+            margin-left: 10px;
+            float: left;
+        }
+        .bottom_right a{
+            font-size: 10px;
+            color: darkgray;
+        }
+        .bottom_right p{
+            font-size: 10px;
+            color: darkgray;
+            margin: 0 auto;
+        }
+
+    </style>
+    <script>
+        function photo_display(){
+            document.getElementById("photo").style.backgroundPosition="0 -20px";
+        }
+        function photo_displaynono(){
+            document.getElementById("photo").style.backgroundPosition="0 0";
+        }
+        function showyc(){
+            document.getElementById("photo_yc").style.display="block";
+        }
+        function unshowyc(){
+            document.getElementById("photo_yc").style.display="none";
+        }
+        function showmore(){
+            document.getElementById("more_product").style.display="block";
+        }
+        function unshowmore(){
+            document.getElementById("more_product").style.display="none";
+        }
+    </script>
+</head>
+<body>
+<!--盒子-->
+<div id="test">
+    <!--头部 开始-->
+    <div class="top">
+        <ul>
+            <li class="more"><a href="###" onmousemove="showmore()">更多产品</a></li>
+            <li><a href="###">设置</a></li>
+            <li><a href="###">登录</a></li>
+            <li><a href="###">贴吧</a></li>
+            <li><a class="font_jiacu" href="shi%5Bin.html">视频</a></li>
+            <li><a href="###">hao123</a></li>
+            <li><a class="font_jiacu" href="###">新闻</a></li>
+            <li><a class="font_jiacu" href="###">糯米</a></li>
+        </ul>
+
+    </div>
+    <!--头部 结束-->
+    <!--中间部分 开始-->
+    <div class="middle">
+        <!--logo 开始-->
+        <div class="baidu_logo">
+            <!--图片-->
+            <img src="image/bd_logo1.png" width="300" height="150"/>
+        </div>
+        <!--logo 结束-->
+
+        <!--搜索框 开始-->
+        <div class="search">
+            <input class="text_input" type="text"/>
+            <input class="button_input" type="button" value="百度一下"/>
+            <!--照相机-->
+            <div class="photo" id="photo" onmousemove="photo_display()" onmouseout="photo_displaynono()" onclick="showyc()"></div>
+            <!--隐藏图片-->
+            <div class="photo_yc" id="photo_yc" onclick="unshowyc()"></div>
+        </div>
+        <!--搜索框 结束-->
+        <!--盒子-->
+        <div class="more_product" id="more_product" onmousemove="showmore()" onmouseout="unshowmore()">
+            <ul>
+                <li style="width: 75px;font-size: 16px">更多产品</li>
+                <li class="music"></li>
+                <li><a href="baidu2.html">音乐</a></li>
+                <li class="picture"></li>
+                <li><a href="#">图片</a></li>
+                <li class="know"></li>
+                <li><a href="#">知道</a></li>
+                <li class="bang"></li>
+                <li style="width: 50px"><a href="#">风云榜</a></li>
+                <li style="width: 100%;height: 50px"></li>
+                <li style="width: 75px"><a href="#">全部产品>> </a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--中间部分 结束-->
+    <!--底部 开始-->
+    <div class="bottom">
+        <div class="bottom_left">
+            <div class="bottom_left_left">
+                <div style="float: left"><img src="image/e1.png"/></div>
+                <div class="left_text">
+                    <p><b>手机百度</b></p>
+                    <p>快人一步</p>
+                </div>
+            </div>
+            <div class="bottom_left_right">
+                <div style="float: left"><img src="image/e2.png"/></div>
+                <div class="left_text">
+                    <p><b>百度糯米</b></p>
+                    <p>一元抢购</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_right">
+            <p>
+                <a href="#">把百度设为首页&nbsp;</a>
+                <a href="#">关于百度&nbsp;</a>
+                <a href="#">About baidu&nbsp;</a>
+                <a href="#">百度推广&nbsp;</a>
+            </p>
+            <p style="margin-top: 8px">
+                &copy;Baidu<a href="#">使用前必读 </a>
+                <a href="#">意见反馈</a>京ICP证0222353
+            </p >
+            <p style="margin-top: 8px">京公网备案11000002000001号</p>
+        </div>
+    </div>
+    <!--底部 结束-->
+</div>
+
+
+</body>
+</html>
